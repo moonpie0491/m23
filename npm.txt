@@ -1,0 +1,16 @@
+node next.js
+ALTER USER 'root'@'localhost' identified WITH MYSQL_NATIVE_PASSWORD BY 'Srushti@228';
+
+flush privileges;
+Example of POST request in Postman
+Method: POST
+URL: http://localhost:3000/courses
+Headers:
+Key: Content-Type
+Value: application/x-www-form-urlencoded
+Body:
+Key: name, Value: New Course
+Key: instructor, Value: New Instructor
+Key: duration, Value: 10
+Key: level, Value: Beginner
+Key: fee, Value: 100
